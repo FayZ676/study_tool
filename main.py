@@ -51,24 +51,10 @@ def extract_page_html(url: str) -> HTML:
         driver.quit()
 
 
-def extract_section_html(html: HTML, xpath: str) -> HTML:
-    """Extract the html for a section on a page given the XPATH."""
-    tree = lxml_html.fromstring(html)
-    elements = tree.xpath(xpath)
-    if not elements:
-        logger.warning("❌ No elements found for the given XPath.")
-        return ""
-    logger.info("✅ Elements found for the given XPath.")
-    result = lxml_html.tostring(elements[0], encoding="unicode")
-    return str(result)
-
-
-def parse_documentation(html: HTML) -> Documentation:
+def parse_documentation(url: str, html: HTML) -> Documentation:
     """Parse the HTML into a Documentation instance."""
-    tree = lxml_html.fromstring(html)
-    sections = []
 
-    def extract_section(li_element) -> DocumentationSection:
+    def parse_documentation_section(li_element) -> DocumentationSection:
         """Extract a documentation section from an <li> element."""
         link_elem = (
             li_element.xpath('.//a[contains(@class, "awsui_link")]')[0]
@@ -93,7 +79,7 @@ def parse_documentation(html: HTML) -> Documentation:
         if nested_ul:
             child_items = nested_ul[0].xpath("./li")
             for child_li in child_items:
-                children.append(extract_section(child_li))
+                children.append(parse_documentation_section(child_li))
 
         return DocumentationSection(
             name=name,
@@ -103,30 +89,35 @@ def parse_documentation(html: HTML) -> Documentation:
             last_updated=datetime.now(),
         )
 
-    top_level_items = tree.xpath('.//li[@class="awsui_list-item_l0dv0_n545v_260"]')
+    tree = lxml_html.fromstring(html)
+    contents_xpath = "//ul[contains(@class, 'awsui_list_l0dv0_n545v_224') and contains(@class, 'awsui_list-variant-root_l0dv0_n545v_245')]//li[@class='awsui_list-item_l0dv0_n545v_260']"
+    top_level_items = tree.xpath(contents_xpath)
 
+    if not top_level_items:
+        logger.warning("❌ No list items found.")
+        return Documentation(sections=[], url=url, last_updated=datetime.now())
+
+    logger.info("✅ Found %d list items.", len(top_level_items))
+
+    sections = []
     for li in top_level_items:
         parent_ul = li.getparent()
         if parent_ul is not None and "expandable-link-group" in parent_ul.get(
             "class", ""
         ):
             continue
-        sections.append(extract_section(li))
+        sections.append(parse_documentation_section(li))
 
     return Documentation(
         sections=sections,
-        url="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+        url=url,
         last_updated=datetime.now(),
     )
 
 
 if __name__ == "__main__":
-    XPATH = "//ul[contains(@class, 'awsui_list_l0dv0_n545v_224') and contains(@class, 'awsui_list-variant-root_l0dv0_n545v_245')]"
-    base_url = "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
-    extracted_html = extract_section_html(
-        html=extract_page_html(url=base_url),
-        xpath=XPATH,
-    )
-    documentation = parse_documentation(extracted_html)
-    with open("documentation.json", "w") as f:
+    BASE_URL = "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+    full_html = extract_page_html(url=BASE_URL)
+    documentation = parse_documentation(url=BASE_URL, html=full_html)
+    with open("documentation.json", "w", encoding="utf-8") as f:
         json.dump(asdict(documentation), f, default=str, indent=2)
