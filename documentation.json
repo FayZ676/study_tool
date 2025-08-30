@@ -1,0 +1,2827 @@
+{
+  "sections": [
+    {
+      "name": "What is AWS Lambda?",
+      "text": "What is AWS Lambda?",
+      "path": "welcome.html",
+      "children": [
+        {
+          "name": "How it works",
+          "text": "How it works",
+          "path": "concepts-basics.html",
+          "children": [
+            {
+              "name": "Running code",
+              "text": "Running code",
+              "path": "concepts-how-lambda-runs-code.html",
+              "children": [
+                {
+                  "name": "Programming model",
+                  "text": "Programming model",
+                  "path": "foundation-progmodel.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.693999"
+                },
+                {
+                  "name": "Execution environment",
+                  "text": "Execution environment",
+                  "path": "lambda-runtime-environment.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.694031"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.694033"
+            },
+            {
+              "name": "Creating event-driven architectures",
+              "text": "Creating event-driven architectures",
+              "path": "concepts-event-driven-architectures.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694056"
+            },
+            {
+              "name": "Designing an application",
+              "text": "Designing an application",
+              "path": "concepts-application-design.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694078"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.694079"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.694080"
+    },
+    {
+      "name": "Create your first function",
+      "text": "Create your first function",
+      "path": "getting-started.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.694107"
+    },
+    {
+      "name": "Example apps and patterns",
+      "text": "Example apps and patterns",
+      "path": "example-apps.html",
+      "children": [
+        {
+          "name": "File-processing app",
+          "text": "File-processing app",
+          "path": "file-processing-app.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694160"
+        },
+        {
+          "name": "Scheduled-maintenance app",
+          "text": "Scheduled-maintenance app",
+          "path": "scheduled-task-app.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694181"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.694182"
+    },
+    {
+      "name": "Management tools",
+      "text": "Management tools",
+      "path": "tools-to-develop-deploy-manage.html",
+      "children": [
+        {
+          "name": "Local development",
+          "text": "Local development",
+          "path": "foundation-iac-local-development.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694247"
+        },
+        {
+          "name": "GitHub Actions",
+          "text": "GitHub Actions",
+          "path": "deploying-github-actions.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694268"
+        },
+        {
+          "name": "Infrastructure as code (IaC)",
+          "text": "Infrastructure as code (IaC)",
+          "path": "foundation-iac.html",
+          "children": [
+            {
+              "name": "Using AWS SAM and Infrastructure Composer",
+              "text": "Using AWS SAM and Infrastructure Composer",
+              "path": "foundation-iac-getting-started.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694319"
+            },
+            {
+              "name": "Using AWS CDK",
+              "text": "Using AWS CDK",
+              "path": "lambda-cdk-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694340"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.694341"
+        },
+        {
+          "name": "Workflows and events",
+          "text": "Workflows and events",
+          "path": "workflow-event-management.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694362"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.694363"
+    },
+    {
+      "name": "Lambda runtimes",
+      "text": "Lambda runtimes",
+      "path": "lambda-runtimes.html",
+      "children": [
+        {
+          "name": "Runtime version updates",
+          "text": "Runtime version updates",
+          "path": "runtimes-update.html",
+          "children": [
+            {
+              "name": "Configuring runtime management",
+              "text": "Configuring runtime management",
+              "path": "runtime-management-configure-settings.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694478"
+            },
+            {
+              "name": "Runtime version roll-back",
+              "text": "Runtime version roll-back",
+              "path": "runtime-management-rollback.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694498"
+            },
+            {
+              "name": "Runtime version updates",
+              "text": "Runtime version updates",
+              "path": "runtime-management-identify.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694518"
+            },
+            {
+              "name": "Shared responsibility model",
+              "text": "Shared responsibility model",
+              "path": "runtime-management-shared.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694538"
+            },
+            {
+              "name": "Permissions",
+              "text": "Permissions",
+              "path": "runtime-management-hc-applications.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694559"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.694560"
+        },
+        {
+          "name": "Get data about functions by runtime",
+          "text": "Get data about functions by runtime",
+          "path": "runtimes-list-deprecated.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694580"
+        },
+        {
+          "name": "Runtime modifications",
+          "text": "Runtime modifications",
+          "path": "runtimes-modify.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694600"
+        },
+        {
+          "name": "Runtime API",
+          "text": "Runtime API",
+          "path": "runtimes-api.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694620"
+        },
+        {
+          "name": "OS-only runtimes",
+          "text": "OS-only runtimes",
+          "path": "runtimes-provided.html",
+          "children": [
+            {
+              "name": "Building a custom runtime",
+              "text": "Building a custom runtime",
+              "path": "runtimes-custom.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694672"
+            },
+            {
+              "name": "Custom runtime tutorial",
+              "text": "Custom runtime tutorial",
+              "path": "runtimes-walkthrough.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694697"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.694698"
+        },
+        {
+          "name": "Open source repositories",
+          "text": "Open source repositories",
+          "path": "runtimes-open-source.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694719"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.694720"
+    },
+    {
+      "name": "Configuring functions",
+      "text": "Configuring functions",
+      "path": "lambda-functions.html",
+      "children": [
+        {
+          "name": ".zip file archives",
+          "text": ".zip file archives",
+          "path": "configuration-function-zip.html",
+          "children": [
+            {
+              "name": "Encryption",
+              "text": "Encryption",
+              "path": "encrypt-zip-package.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.694854"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.694854"
+        },
+        {
+          "name": "Container images",
+          "text": "Container images",
+          "path": "images-create.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694875"
+        },
+        {
+          "name": "Memory",
+          "text": "Memory",
+          "path": "configuration-memory.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694895"
+        },
+        {
+          "name": "Ephemeral storage",
+          "text": "Ephemeral storage",
+          "path": "configuration-ephemeral-storage.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694915"
+        },
+        {
+          "name": "Instruction sets (ARM/x86)",
+          "text": "Instruction sets (ARM/x86)",
+          "path": "foundation-arch.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694936"
+        },
+        {
+          "name": "Timeout",
+          "text": "Timeout",
+          "path": "configuration-timeout.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.694956"
+        },
+        {
+          "name": "Environment variables",
+          "text": "Environment variables",
+          "path": "configuration-envvars.html",
+          "children": [
+            {
+              "name": "Securing environment variables",
+              "text": "Securing environment variables",
+              "path": "configuration-envvars-encryption.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695003"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695004"
+        },
+        {
+          "name": "Attaching functions to a VPC",
+          "text": "Attaching functions to a VPC",
+          "path": "configuration-vpc.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695024"
+        },
+        {
+          "name": "Attaching functions to resources in another account",
+          "text": "Attaching functions to resources in another account",
+          "path": "configuration-vpc-cross-account.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695044"
+        },
+        {
+          "name": "Internet access for VPC functions",
+          "text": "Internet access for VPC functions",
+          "path": "configuration-vpc-internet.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695064"
+        },
+        {
+          "name": "Inbound networking",
+          "text": "Inbound networking",
+          "path": "configuration-vpc-endpoints.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695085"
+        },
+        {
+          "name": "File system",
+          "text": "File system",
+          "path": "configuration-filesystem.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695105"
+        },
+        {
+          "name": "Aliases",
+          "text": "Aliases",
+          "path": "configuration-aliases.html",
+          "children": [
+            {
+              "name": "Using aliases",
+              "text": "Using aliases",
+              "path": "using-aliases.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695154"
+            },
+            {
+              "name": "Weighted aliases",
+              "text": "Weighted aliases",
+              "path": "configuring-alias-routing.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695174"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695175"
+        },
+        {
+          "name": "Versions",
+          "text": "Versions",
+          "path": "configuration-versions.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695195"
+        },
+        {
+          "name": "Tags",
+          "text": "Tags",
+          "path": "configuration-tags.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695216"
+        },
+        {
+          "name": "Response streaming",
+          "text": "Response streaming",
+          "path": "configuration-response-streaming.html",
+          "children": [
+            {
+              "name": "Writing functions",
+              "text": "Writing functions",
+              "path": "config-rs-write-functions.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695269"
+            },
+            {
+              "name": "Invoking functions",
+              "text": "Invoking functions",
+              "path": "config-rs-invoke-furls.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695290"
+            },
+            {
+              "name": "Tutorial: Creating a response streaming function with a function URL",
+              "text": "Tutorial: Creating a response streaming function with a function URL",
+              "path": "response-streaming-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695310"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695311"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.695312"
+    },
+    {
+      "name": "Invoking functions",
+      "text": "Invoking functions",
+      "path": "lambda-invocation.html",
+      "children": [
+        {
+          "name": "Invoke a function synchronously",
+          "text": "Invoke a function synchronously",
+          "path": "invocation-sync.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695411"
+        },
+        {
+          "name": "Asynchronous invocation",
+          "text": "Asynchronous invocation",
+          "path": "invocation-async.html",
+          "children": [
+            {
+              "name": "Error handling",
+              "text": "Error handling",
+              "path": "invocation-async-error-handling.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695462"
+            },
+            {
+              "name": "Configuration",
+              "text": "Configuration",
+              "path": "invocation-async-configuring.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695483"
+            },
+            {
+              "name": "Retaining records",
+              "text": "Retaining records",
+              "path": "invocation-async-retain-records.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695503"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695504"
+        },
+        {
+          "name": "Event source mappings",
+          "text": "Event source mappings",
+          "path": "invocation-eventsourcemapping.html",
+          "children": [
+            {
+              "name": "Event source mapping tags",
+              "text": "Event source mapping tags",
+              "path": "tags-esm.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695551"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695552"
+        },
+        {
+          "name": "Event filtering",
+          "text": "Event filtering",
+          "path": "invocation-eventfiltering.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695572"
+        },
+        {
+          "name": "Testing in console",
+          "text": "Testing in console",
+          "path": "testing-functions.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695592"
+        },
+        {
+          "name": "Function states",
+          "text": "Function states",
+          "path": "functions-states.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695612"
+        },
+        {
+          "name": "Retries",
+          "text": "Retries",
+          "path": "invocation-retries.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695632"
+        },
+        {
+          "name": "Recursive loop detection",
+          "text": "Recursive loop detection",
+          "path": "invocation-recursion.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695652"
+        },
+        {
+          "name": "Function URLs",
+          "text": "Function URLs",
+          "path": "urls-configuration.html",
+          "children": [
+            {
+              "name": "Access control",
+              "text": "Access control",
+              "path": "urls-auth.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695707"
+            },
+            {
+              "name": "Invoking function URLs",
+              "text": "Invoking function URLs",
+              "path": "urls-invocation.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695727"
+            },
+            {
+              "name": "Monitoring function URLs",
+              "text": "Monitoring function URLs",
+              "path": "urls-monitoring.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695747"
+            },
+            {
+              "name": "Function URLs vs Amazon API Gateway",
+              "text": "Function URLs vs Amazon API Gateway",
+              "path": "furls-http-invoke-decision.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695767"
+            },
+            {
+              "name": "Tutorial: Creating a webhook endpoint",
+              "text": "Tutorial: Creating a webhook endpoint",
+              "path": "urls-webhook-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.695787"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.695787"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.695788"
+    },
+    {
+      "name": "Function scaling",
+      "text": "Function scaling",
+      "path": "lambda-concurrency.html",
+      "children": [
+        {
+          "name": "Configuring reserved concurrency",
+          "text": "Configuring reserved concurrency",
+          "path": "configuration-concurrency.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695851"
+        },
+        {
+          "name": "Configuring provisioned concurrency",
+          "text": "Configuring provisioned concurrency",
+          "path": "provisioned-concurrency.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695872"
+        },
+        {
+          "name": "Scaling behavior",
+          "text": "Scaling behavior",
+          "path": "scaling-behavior.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695892"
+        },
+        {
+          "name": "Monitoring concurrency",
+          "text": "Monitoring concurrency",
+          "path": "monitoring-concurrency.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695912"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.695912"
+    },
+    {
+      "name": "Building with Node.js",
+      "text": "Building with Node.js",
+      "path": "lambda-nodejs.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "nodejs-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695977"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "nodejs-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.695998"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "nodejs-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696018"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "nodejs-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696038"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "nodejs-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696058"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "nodejs-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696078"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "nodejs-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696098"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.696099"
+    },
+    {
+      "name": "Building with TypeScript",
+      "text": "Building with TypeScript",
+      "path": "lambda-typescript.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "typescript-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696161"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "typescript-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696181"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "typescript-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696201"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "typescript-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696221"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "typescript-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696241"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "typescript-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696261"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.696262"
+    },
+    {
+      "name": "Building with Python",
+      "text": "Building with Python",
+      "path": "lambda-python.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "python-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696327"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "python-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696347"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "python-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696367"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "python-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696387"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "python-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696407"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "python-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696427"
+        },
+        {
+          "name": "Testing",
+          "text": "Testing",
+          "path": "python-testing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696447"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "python-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696467"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.696468"
+    },
+    {
+      "name": "Building with Ruby",
+      "text": "Building with Ruby",
+      "path": "lambda-ruby.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "ruby-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696531"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "ruby-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696551"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "ruby-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696572"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "ruby-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696592"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "ruby-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696612"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "ruby-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696632"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "ruby-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696652"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.696653"
+    },
+    {
+      "name": "Building with Java",
+      "text": "Building with Java",
+      "path": "lambda-java.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "java-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696765"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "java-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696794"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "java-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696816"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "java-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696838"
+        },
+        {
+          "name": "Custom serialization",
+          "text": "Custom serialization",
+          "path": "java-custom-serialization.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696860"
+        },
+        {
+          "name": "Custom startup behavior",
+          "text": "Custom startup behavior",
+          "path": "java-customization.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696881"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "java-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696902"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "java-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696923"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "java-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696943"
+        },
+        {
+          "name": "Sample apps",
+          "text": "Sample apps",
+          "path": "java-samples.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.696964"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.696965"
+    },
+    {
+      "name": "Building with Go",
+      "text": "Building with Go",
+      "path": "lambda-golang.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "golang-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697039"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "golang-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697061"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "golang-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697081"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "go-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697102"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "golang-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697123"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "golang-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697150"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "golang-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697170"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.697171"
+    },
+    {
+      "name": "Building with C#",
+      "text": "Building with C#",
+      "path": "lambda-csharp.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "csharp-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697251"
+        },
+        {
+          "name": "Deployment package",
+          "text": "Deployment package",
+          "path": "csharp-package.html",
+          "children": [
+            {
+              "name": "NET Lambda Global CLI",
+              "text": "NET Lambda Global CLI",
+              "path": "csharp-package-cli.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.697304"
+            },
+            {
+              "name": "AWS SAM",
+              "text": "AWS SAM",
+              "path": "csharp-package-sam.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.697324"
+            },
+            {
+              "name": "AWS CDK",
+              "text": "AWS CDK",
+              "path": "csharp-package-cdk.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.697344"
+            },
+            {
+              "name": "ASP.NET",
+              "text": "ASP.NET",
+              "path": "csharp-package-asp.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.697364"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.697365"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "dotnet-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697385"
+        },
+        {
+          "name": "Deploy container images",
+          "text": "Deploy container images",
+          "path": "csharp-image.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697404"
+        },
+        {
+          "name": "Native AOT compilation",
+          "text": "Native AOT compilation",
+          "path": "dotnet-native-aot.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697424"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "csharp-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697444"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "csharp-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697464"
+        },
+        {
+          "name": "Tracing",
+          "text": "Tracing",
+          "path": "csharp-tracing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697484"
+        },
+        {
+          "name": "Testing",
+          "text": "Testing",
+          "path": "dotnet-csharp-testing.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697504"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.697505"
+    },
+    {
+      "name": "Building with PowerShell",
+      "text": "Building with PowerShell",
+      "path": "lambda-powershell.html",
+      "children": [
+        {
+          "name": "Development Environment",
+          "text": "Development Environment",
+          "path": "powershell-devenv.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697568"
+        },
+        {
+          "name": "Deployment package",
+          "text": "Deployment package",
+          "path": "powershell-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697588"
+        },
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "powershell-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697608"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "powershell-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697628"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "powershell-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697648"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.697648"
+    },
+    {
+      "name": "Building with Rust",
+      "text": "Building with Rust",
+      "path": "lambda-rust.html",
+      "children": [
+        {
+          "name": "Handler",
+          "text": "Handler",
+          "path": "rust-handler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697709"
+        },
+        {
+          "name": "Context",
+          "text": "Context",
+          "path": "rust-context.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697729"
+        },
+        {
+          "name": "HTTP events",
+          "text": "HTTP events",
+          "path": "rust-http-events.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697749"
+        },
+        {
+          "name": "Deploy .zip file archives",
+          "text": "Deploy .zip file archives",
+          "path": "rust-package.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697769"
+        },
+        {
+          "name": "Layers",
+          "text": "Layers",
+          "path": "rust-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697788"
+        },
+        {
+          "name": "Logging",
+          "text": "Logging",
+          "path": "rust-logging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697808"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.697809"
+    },
+    {
+      "name": "Best practices",
+      "text": "Best practices",
+      "path": "best-practices.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.697834"
+    },
+    {
+      "name": "Testing serverless functions",
+      "text": "Testing serverless functions",
+      "path": "testing-guide.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.697855"
+    },
+    {
+      "name": "Lambda SnapStart",
+      "text": "Lambda SnapStart",
+      "path": "snapstart.html",
+      "children": [
+        {
+          "name": "Activating SnapStart",
+          "text": "Activating SnapStart",
+          "path": "snapstart-activate.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697922"
+        },
+        {
+          "name": "Handling uniqueness",
+          "text": "Handling uniqueness",
+          "path": "snapstart-uniqueness.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.697943"
+        },
+        {
+          "name": "Runtime hooks",
+          "text": "Runtime hooks",
+          "path": "snapstart-runtime-hooks.html",
+          "children": [
+            {
+              "name": "Java",
+              "text": "Java",
+              "path": "snapstart-runtime-hooks-java.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.697993"
+            },
+            {
+              "name": "Python",
+              "text": "Python",
+              "path": "snapstart-runtime-hooks-python.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698013"
+            },
+            {
+              "name": ".NET",
+              "text": ".NET",
+              "path": "snapstart-runtime-hooks-dotnet.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698033"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.698034"
+        },
+        {
+          "name": "Monitoring",
+          "text": "Monitoring",
+          "path": "snapstart-monitoring.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.698054"
+        },
+        {
+          "name": "Security model",
+          "text": "Security model",
+          "path": "snapstart-security.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.698074"
+        },
+        {
+          "name": "Best practices",
+          "text": "Best practices",
+          "path": "snapstart-best-practices.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.698094"
+        },
+        {
+          "name": "Troubleshooting",
+          "text": "Troubleshooting",
+          "path": "snapstart-troubleshooting.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.698113"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.698114"
+    },
+    {
+      "name": "Integrating other services",
+      "text": "Integrating other services",
+      "path": "lambda-services.html",
+      "children": [
+        {
+          "name": "Apache Kafka",
+          "text": "Apache Kafka",
+          "path": "with-kafka-esm.html",
+          "children": [
+            {
+              "name": "MSK",
+              "text": "MSK",
+              "path": "with-msk.html",
+              "children": [
+                {
+                  "name": "Cluster and network setup",
+                  "text": "Cluster and network setup",
+                  "path": "with-msk-cluster-network.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698463"
+                },
+                {
+                  "name": "Configure event source",
+                  "text": "Configure event source",
+                  "path": "with-msk-configure.html",
+                  "children": [
+                    {
+                      "name": "Event source mapping",
+                      "text": "Event source mapping",
+                      "path": "msk-esm-create.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698521"
+                    },
+                    {
+                      "name": "Cluster authentication",
+                      "text": "Cluster authentication",
+                      "path": "msk-cluster-auth.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698541"
+                    },
+                    {
+                      "name": "Consumer group ID",
+                      "text": "Consumer group ID",
+                      "path": "msk-cgid.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698561"
+                    },
+                    {
+                      "name": "Polling and stream positions",
+                      "text": "Polling and stream positions",
+                      "path": "msk-starting-positions.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698581"
+                    },
+                    {
+                      "name": "Event poller scaling",
+                      "text": "Event poller scaling",
+                      "path": "msk-scaling-modes.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698601"
+                    },
+                    {
+                      "name": "Cross-account event source mappings",
+                      "text": "Cross-account event source mappings",
+                      "path": "msk-cross-account.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698621"
+                    },
+                    {
+                      "name": "event source configuration parameters",
+                      "text": "event source configuration parameters",
+                      "path": "msk-esm-parameters.html",
+                      "children": [],
+                      "last_updated": "2025-08-30 12:16:04.698641"
+                    }
+                  ],
+                  "last_updated": "2025-08-30 12:16:04.698642"
+                },
+                {
+                  "name": "Configure permissions",
+                  "text": "Configure permissions",
+                  "path": "with-msk-permissions.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698662"
+                },
+                {
+                  "name": "Event filtering",
+                  "text": "Event filtering",
+                  "path": "with-msk-filtering.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698681"
+                },
+                {
+                  "name": "On-failure destinations",
+                  "text": "On-failure destinations",
+                  "path": "with-msk-on-failure.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698701"
+                },
+                {
+                  "name": "Tutorial",
+                  "text": "Tutorial",
+                  "path": "services-msk-tutorial.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698721"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.698722"
+            },
+            {
+              "name": "Self-managed Apache Kafka",
+              "text": "Self-managed Apache Kafka",
+              "path": "with-kafka.html",
+              "children": [
+                {
+                  "name": "Configure event source",
+                  "text": "Configure event source",
+                  "path": "with-kafka-configure.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698776"
+                },
+                {
+                  "name": "Process messages",
+                  "text": "Process messages",
+                  "path": "with-kafka-process.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698797"
+                },
+                {
+                  "name": "Event filtering",
+                  "text": "Event filtering",
+                  "path": "with-kafka-filtering.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698816"
+                },
+                {
+                  "name": "On-failure destinations",
+                  "text": "On-failure destinations",
+                  "path": "with-kafka-on-failure.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698836"
+                },
+                {
+                  "name": "Troubleshooting",
+                  "text": "Troubleshooting",
+                  "path": "with-kafka-troubleshoot.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.698856"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.698857"
+            },
+            {
+              "name": "Schema registries with event sources",
+              "text": "Schema registries with event sources",
+              "path": "services-consume-kafka-events.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698877"
+            },
+            {
+              "name": "Low latency Apache Kafka",
+              "text": "Low latency Apache Kafka",
+              "path": "with-kafka-low-latency.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698896"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.698897"
+        },
+        {
+          "name": "API Gateway",
+          "text": "API Gateway",
+          "path": "services-apigateway.html",
+          "children": [
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "services-apigateway-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698948"
+            },
+            {
+              "name": "Errors",
+              "text": "Errors",
+              "path": "services-apigateway-errors.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698968"
+            },
+            {
+              "name": "API Gateway vs function URLs",
+              "text": "API Gateway vs function URLs",
+              "path": "apig-http-invoke-decision.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.698987"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.698988"
+        },
+        {
+          "name": "Infrastructure Composer",
+          "text": "Infrastructure Composer",
+          "path": "services-appcomposer.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699008"
+        },
+        {
+          "name": "CloudFormation",
+          "text": "CloudFormation",
+          "path": "services-cloudformation.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699028"
+        },
+        {
+          "name": "Amazon DocumentDB",
+          "text": "Amazon DocumentDB",
+          "path": "with-documentdb.html",
+          "children": [
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "with-documentdb-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699074"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699075"
+        },
+        {
+          "name": "DynamoDB",
+          "text": "DynamoDB",
+          "path": "with-ddb.html",
+          "children": [
+            {
+              "name": "Create mapping",
+              "text": "Create mapping",
+              "path": "services-dynamodb-eventsourcemapping.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699133"
+            },
+            {
+              "name": "Batch item failures",
+              "text": "Batch item failures",
+              "path": "services-ddb-batchfailurereporting.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699153"
+            },
+            {
+              "name": "Error handling",
+              "text": "Error handling",
+              "path": "services-dynamodb-errors.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699173"
+            },
+            {
+              "name": "Stateful processing",
+              "text": "Stateful processing",
+              "path": "services-ddb-windows.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699193"
+            },
+            {
+              "name": "Parameters",
+              "text": "Parameters",
+              "path": "services-ddb-params.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699243"
+            },
+            {
+              "name": "Event filtering",
+              "text": "Event filtering",
+              "path": "with-ddb-filtering.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699262"
+            },
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "with-ddb-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699283"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699283"
+        },
+        {
+          "name": "EC2",
+          "text": "EC2",
+          "path": "services-ec2.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699303"
+        },
+        {
+          "name": "Elastic Load Balancing (Application Load Balancer)",
+          "text": "Elastic Load Balancing (Application Load Balancer)",
+          "path": "services-alb.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699323"
+        },
+        {
+          "name": "Invoke using an EventBridge Scheduler",
+          "text": "Invoke using an EventBridge Scheduler",
+          "path": "with-eventbridge-scheduler.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699343"
+        },
+        {
+          "name": "IoT",
+          "text": "IoT",
+          "path": "services-iot.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699365"
+        },
+        {
+          "name": "Kinesis Data Streams",
+          "text": "Kinesis Data Streams",
+          "path": "with-kinesis.html",
+          "children": [
+            {
+              "name": "Create mapping",
+              "text": "Create mapping",
+              "path": "services-kinesis-create.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699424"
+            },
+            {
+              "name": "Batch item failures",
+              "text": "Batch item failures",
+              "path": "services-kinesis-batchfailurereporting.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699444"
+            },
+            {
+              "name": "Error handling",
+              "text": "Error handling",
+              "path": "kinesis-on-failure-destination.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699464"
+            },
+            {
+              "name": "Stateful processing",
+              "text": "Stateful processing",
+              "path": "services-kinesis-windows.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699484"
+            },
+            {
+              "name": "Parameters",
+              "text": "Parameters",
+              "path": "services-kinesis-parameters.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699504"
+            },
+            {
+              "name": "Event filtering",
+              "text": "Event filtering",
+              "path": "with-kinesis-filtering.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699524"
+            },
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "with-kinesis-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699544"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699545"
+        },
+        {
+          "name": "Kubernetes",
+          "text": "Kubernetes",
+          "path": "with-kubernetes.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699564"
+        },
+        {
+          "name": "MQ",
+          "text": "MQ",
+          "path": "with-mq.html",
+          "children": [
+            {
+              "name": "Configure event source",
+              "text": "Configure event source",
+              "path": "process-mq-messages-with-lambda.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699619"
+            },
+            {
+              "name": "Parameters",
+              "text": "Parameters",
+              "path": "services-mq-params.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699639"
+            },
+            {
+              "name": "Event filtering",
+              "text": "Event filtering",
+              "path": "with-mq-filtering.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699659"
+            },
+            {
+              "name": "Troubleshoot",
+              "text": "Troubleshoot",
+              "path": "services-mq-errors.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699679"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699680"
+        },
+        {
+          "name": "RDS",
+          "text": "RDS",
+          "path": "services-rds.html",
+          "children": [
+            {
+              "name": "Amazon RDS vs DynamoDB",
+              "text": "Amazon RDS vs DynamoDB",
+              "path": "ddb-rds-database-decision.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699726"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699727"
+        },
+        {
+          "name": "S3",
+          "text": "S3",
+          "path": "with-s3.html",
+          "children": [
+            {
+              "name": "Tutorial: Use an S3 trigger",
+              "text": "Tutorial: Use an S3 trigger",
+              "path": "with-s3-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699775"
+            },
+            {
+              "name": "Tutorial: Use an Amazon S3 trigger to create thumbnails",
+              "text": "Tutorial: Use an Amazon S3 trigger to create thumbnails",
+              "path": "with-s3-tutorial.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699795"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699796"
+        },
+        {
+          "name": "Secrets Manager",
+          "text": "Secrets Manager",
+          "path": "with-secrets-manager.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.699816"
+        },
+        {
+          "name": "SQS",
+          "text": "SQS",
+          "path": "with-sqs.html",
+          "children": [
+            {
+              "name": "Create mapping",
+              "text": "Create mapping",
+              "path": "services-sqs-configure.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699873"
+            },
+            {
+              "name": "Scaling behavior",
+              "text": "Scaling behavior",
+              "path": "services-sqs-scaling.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699893"
+            },
+            {
+              "name": "Error handling",
+              "text": "Error handling",
+              "path": "services-sqs-errorhandling.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699913"
+            },
+            {
+              "name": "Parameters",
+              "text": "Parameters",
+              "path": "services-sqs-parameters.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699933"
+            },
+            {
+              "name": "Event filtering",
+              "text": "Event filtering",
+              "path": "with-sqs-filtering.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699952"
+            },
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "with-sqs-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699975"
+            },
+            {
+              "name": "SQS cross-account tutorial",
+              "text": "SQS cross-account tutorial",
+              "path": "with-sqs-cross-account-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.699995"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.699996"
+        },
+        {
+          "name": "Step Functions",
+          "text": "Step Functions",
+          "path": "with-step-functions.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.700016"
+        },
+        {
+          "name": "S3 Batch",
+          "text": "S3 Batch",
+          "path": "services-s3-batch.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.700036"
+        },
+        {
+          "name": "SNS",
+          "text": "SNS",
+          "path": "with-sns.html",
+          "children": [
+            {
+              "name": "Tutorial",
+              "text": "Tutorial",
+              "path": "with-sns-example.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700082"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.700083"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.700084"
+    },
+    {
+      "name": "Lambda permissions",
+      "text": "Lambda permissions",
+      "path": "lambda-permissions.html",
+      "children": [
+        {
+          "name": "Execution role (permissions for functions to access other resources)",
+          "text": "Execution role (permissions for functions to access other resources)",
+          "path": "lambda-intro-execution-role.html",
+          "children": [
+            {
+              "name": "Update execution role",
+              "text": "Update execution role",
+              "path": "permissions-executionrole-update.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700244"
+            },
+            {
+              "name": "AWS managed policies",
+              "text": "AWS managed policies",
+              "path": "permissions-managed-policies.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700265"
+            },
+            {
+              "name": "Source function ARN",
+              "text": "Source function ARN",
+              "path": "permissions-source-function-arn.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700286"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.700287"
+        },
+        {
+          "name": "Access permissions (permissions for other entities to access your functions)",
+          "text": "Access permissions (permissions for other entities to access your functions)",
+          "path": "permissions-granting-access.html",
+          "children": [
+            {
+              "name": "Identity-based policies",
+              "text": "Identity-based policies",
+              "path": "access-control-identity-based.html",
+              "children": [
+                {
+                  "name": "Function access",
+                  "text": "Function access",
+                  "path": "permissions-user-function.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700388"
+                },
+                {
+                  "name": "Layer access",
+                  "text": "Layer access",
+                  "path": "permissions-user-layer.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700409"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.700410"
+            },
+            {
+              "name": "Resource-based policies",
+              "text": "Resource-based policies",
+              "path": "access-control-resource-based.html",
+              "children": [
+                {
+                  "name": "Function access for AWS services",
+                  "text": "Function access for AWS services",
+                  "path": "permissions-function-services.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700518"
+                },
+                {
+                  "name": "Function access for AWS Organizations",
+                  "text": "Function access for AWS Organizations",
+                  "path": "permissions-function-organization.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700559"
+                },
+                {
+                  "name": "Function access for other accounts",
+                  "text": "Function access for other accounts",
+                  "path": "permissions-function-cross-account.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700583"
+                },
+                {
+                  "name": "Layer access for other accounts",
+                  "text": "Layer access for other accounts",
+                  "path": "permissions-layer-cross-account.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700605"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.700606"
+            },
+            {
+              "name": "Attribute-based access control",
+              "text": "Attribute-based access control",
+              "path": "attribute-based-access-control.html",
+              "children": [
+                {
+                  "name": "Secure your functions by tag",
+                  "text": "Secure your functions by tag",
+                  "path": "attribute-based-access-control-example.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.700661"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.700662"
+            },
+            {
+              "name": "Resources and Conditions",
+              "text": "Resources and Conditions",
+              "path": "lambda-api-permissions-ref.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700683"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.700684"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.700685"
+    },
+    {
+      "name": "Security, governance, and compliance",
+      "text": "Security, governance, and compliance",
+      "path": "lambda-security.html",
+      "children": [
+        {
+          "name": "Data protection",
+          "text": "Data protection",
+          "path": "security-dataprotection.html",
+          "children": [
+            {
+              "name": "Encryption at rest",
+              "text": "Encryption at rest",
+              "path": "security-encryption-at-rest.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700837"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.700838"
+        },
+        {
+          "name": "Identity and Access Management",
+          "text": "Identity and Access Management",
+          "path": "security-iam.html",
+          "children": [
+            {
+              "name": "How AWS Lambda works with IAM",
+              "text": "How AWS Lambda works with IAM",
+              "path": "security_iam_service-with-iam.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700895"
+            },
+            {
+              "name": "Identity-based policy examples",
+              "text": "Identity-based policy examples",
+              "path": "security_iam_id-based-policy-examples.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700916"
+            },
+            {
+              "name": "AWS managed policies",
+              "text": "AWS managed policies",
+              "path": "security-iam-awsmanpol.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700937"
+            },
+            {
+              "name": "Troubleshooting",
+              "text": "Troubleshooting",
+              "path": "security_iam_troubleshoot.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.700958"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.700958"
+        },
+        {
+          "name": "Governance",
+          "text": "Governance",
+          "path": "governance-concepts.html",
+          "children": [
+            {
+              "name": "Proactive controls with Guard",
+              "text": "Proactive controls with Guard",
+              "path": "governance-cloudformation-guard.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701016"
+            },
+            {
+              "name": "Proactive controls with AWS Config",
+              "text": "Proactive controls with AWS Config",
+              "path": "governance-config.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701037"
+            },
+            {
+              "name": "Detective controls with AWS Config",
+              "text": "Detective controls with AWS Config",
+              "path": "governance-config-detection.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701057"
+            },
+            {
+              "name": "Code signing",
+              "text": "Code signing",
+              "path": "governance-code-signing.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701077"
+            },
+            {
+              "name": "Code scanning",
+              "text": "Code scanning",
+              "path": "governance-code-scanning.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701097"
+            },
+            {
+              "name": "Observability",
+              "text": "Observability",
+              "path": "governance-observability.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701117"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.701118"
+        },
+        {
+          "name": "Compliance validation",
+          "text": "Compliance validation",
+          "path": "security-compliance.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701138"
+        },
+        {
+          "name": "Resilience",
+          "text": "Resilience",
+          "path": "security-resilience.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701158"
+        },
+        {
+          "name": "Infrastructure security",
+          "text": "Infrastructure security",
+          "path": "security-infrastructure.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701178"
+        },
+        {
+          "name": "Securing workloads with public endpoints",
+          "text": "Securing workloads with public endpoints",
+          "path": "security-public-endpoints.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701198"
+        },
+        {
+          "name": "Code signing",
+          "text": "Code signing",
+          "path": "configuration-codesigning.html",
+          "children": [
+            {
+              "name": "Create configuration",
+              "text": "Create configuration",
+              "path": "configuration-codesigning-create.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701251"
+            },
+            {
+              "name": "Permissions",
+              "text": "Permissions",
+              "path": "config-codesigning-policies.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701272"
+            },
+            {
+              "name": "Code signing configuration tags",
+              "text": "Code signing configuration tags",
+              "path": "tags-csc.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701293"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.701294"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.701295"
+    },
+    {
+      "name": "Monitoring and debugging functions",
+      "text": "Monitoring and debugging functions",
+      "path": "lambda-monitoring.html",
+      "children": [
+        {
+          "name": "Function metrics",
+          "text": "Function metrics",
+          "path": "monitoring-metrics.html",
+          "children": [
+            {
+              "name": "View function metrics",
+              "text": "View function metrics",
+              "path": "monitoring-metrics-view.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701427"
+            },
+            {
+              "name": "Metric types",
+              "text": "Metric types",
+              "path": "monitoring-metrics-types.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701448"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.701449"
+        },
+        {
+          "name": "Function logs",
+          "text": "Function logs",
+          "path": "monitoring-logs.html",
+          "children": [
+            {
+              "name": "Log formats",
+              "text": "Log formats",
+              "path": "monitoring-cloudwatchlogs-logformat.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701517"
+            },
+            {
+              "name": "Log-level filtering",
+              "text": "Log-level filtering",
+              "path": "monitoring-cloudwatchlogs-log-level.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701538"
+            },
+            {
+              "name": "Log with CloudWatch Logs",
+              "text": "Log with CloudWatch Logs",
+              "path": "monitoring-cloudwatchlogs.html",
+              "children": [
+                {
+                  "name": "Configure CloudWatch function logs",
+                  "text": "Configure CloudWatch function logs",
+                  "path": "monitoring-cloudwatchlogs-loggroups.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.701587"
+                },
+                {
+                  "name": "View function logs",
+                  "text": "View function logs",
+                  "path": "monitoring-cloudwatchlogs-view.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.701608"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.701609"
+            },
+            {
+              "name": "Log with Firehose",
+              "text": "Log with Firehose",
+              "path": "logging-with-firehose.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701629"
+            },
+            {
+              "name": "Log with Amazon S3",
+              "text": "Log with Amazon S3",
+              "path": "logging-with-s3.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.701649"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.701650"
+        },
+        {
+          "name": "CloudTrail logs",
+          "text": "CloudTrail logs",
+          "path": "logging-using-cloudtrail.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701670"
+        },
+        {
+          "name": "AWS X-Ray",
+          "text": "AWS X-Ray",
+          "path": "services-xray.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701691"
+        },
+        {
+          "name": "Function insights",
+          "text": "Function insights",
+          "path": "monitoring-insights.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701711"
+        },
+        {
+          "name": "View application metrics",
+          "text": "View application metrics",
+          "path": "applications-console-monitoring.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701732"
+        },
+        {
+          "name": "Application Signals",
+          "text": "Application Signals",
+          "path": "monitoring-application-signals.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701753"
+        },
+        {
+          "name": "Debug with VS Code",
+          "text": "Debug with VS Code",
+          "path": "debugging.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701774"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.701775"
+    },
+    {
+      "name": "Lambda layers",
+      "text": "Lambda layers",
+      "path": "chapter-layers.html",
+      "children": [
+        {
+          "name": "Packaging layers",
+          "text": "Packaging layers",
+          "path": "packaging-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701845"
+        },
+        {
+          "name": "Creating and deleting layers",
+          "text": "Creating and deleting layers",
+          "path": "creating-deleting-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701866"
+        },
+        {
+          "name": "Adding layers",
+          "text": "Adding layers",
+          "path": "adding-layers.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701887"
+        },
+        {
+          "name": "Layers with AWS CloudFormation",
+          "text": "Layers with AWS CloudFormation",
+          "path": "layers-cfn.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701908"
+        },
+        {
+          "name": "Layers with AWS SAM",
+          "text": "Layers with AWS SAM",
+          "path": "layers-sam.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701928"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.701929"
+    },
+    {
+      "name": "Lambda extensions",
+      "text": "Lambda extensions",
+      "path": "lambda-extensions.html",
+      "children": [
+        {
+          "name": "Configuring extensions",
+          "text": "Configuring extensions",
+          "path": "extensions-configuration.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.701999"
+        },
+        {
+          "name": "Extensions partners",
+          "text": "Extensions partners",
+          "path": "extensions-api-partners.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702019"
+        },
+        {
+          "name": "Extensions API",
+          "text": "Extensions API",
+          "path": "runtimes-extensions-api.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702040"
+        },
+        {
+          "name": "Telemetry API",
+          "text": "Telemetry API",
+          "path": "telemetry-api.html",
+          "children": [
+            {
+              "name": "API reference",
+              "text": "API reference",
+              "path": "telemetry-api-reference.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702093"
+            },
+            {
+              "name": "Event schema reference",
+              "text": "Event schema reference",
+              "path": "telemetry-schema-reference.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702113"
+            },
+            {
+              "name": "Converting events to OTel Spans",
+              "text": "Converting events to OTel Spans",
+              "path": "telemetry-otel-spans.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702133"
+            },
+            {
+              "name": "Logs API",
+              "text": "Logs API",
+              "path": "runtimes-logs-api.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702154"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.702154"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.702155"
+    },
+    {
+      "name": "Troubleshooting",
+      "text": "Troubleshooting",
+      "path": "lambda-troubleshooting.html",
+      "children": [
+        {
+          "name": "Configuration",
+          "text": "Configuration",
+          "path": "troubleshooting-configuration.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702219"
+        },
+        {
+          "name": "Deployment",
+          "text": "Deployment",
+          "path": "troubleshooting-deployment.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702239"
+        },
+        {
+          "name": "Invocation",
+          "text": "Invocation",
+          "path": "troubleshooting-invocation.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702260"
+        },
+        {
+          "name": "Execution",
+          "text": "Execution",
+          "path": "troubleshooting-execution.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702280"
+        },
+        {
+          "name": "Event source mapping",
+          "text": "Event source mapping",
+          "path": "troubleshooting-event-source-mapping.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702300"
+        },
+        {
+          "name": "Networking",
+          "text": "Networking",
+          "path": "troubleshooting-networking.html",
+          "children": [],
+          "last_updated": "2025-08-30 12:16:04.702320"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.702321"
+    },
+    {
+      "name": "Sample applications",
+      "text": "Sample applications",
+      "path": "lambda-samples.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.702346"
+    },
+    {
+      "name": "Working with AWS SDKs",
+      "text": "Working with AWS SDKs",
+      "path": "sdk-general-information-section.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.702367"
+    },
+    {
+      "name": "Code examples",
+      "text": "Code examples",
+      "path": "service_code_examples.html",
+      "children": [
+        {
+          "name": "Basics",
+          "text": "Basics",
+          "path": "service_code_examples_basics.html",
+          "children": [
+            {
+              "name": "Hello Lambda",
+              "text": "Hello Lambda",
+              "path": "example_lambda_Hello_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702639"
+            },
+            {
+              "name": "Learn the basics",
+              "text": "Learn the basics",
+              "path": "example_lambda_Scenario_GettingStartedFunctions_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.702660"
+            },
+            {
+              "name": "Actions",
+              "text": "Actions",
+              "path": "service_code_examples_actions.html",
+              "children": [
+                {
+                  "name": "CreateAlias",
+                  "text": "CreateAlias",
+                  "path": "example_lambda_CreateAlias_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702756"
+                },
+                {
+                  "name": "CreateFunction",
+                  "text": "CreateFunction",
+                  "path": "example_lambda_CreateFunction_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702776"
+                },
+                {
+                  "name": "DeleteAlias",
+                  "text": "DeleteAlias",
+                  "path": "example_lambda_DeleteAlias_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702796"
+                },
+                {
+                  "name": "DeleteFunction",
+                  "text": "DeleteFunction",
+                  "path": "example_lambda_DeleteFunction_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702816"
+                },
+                {
+                  "name": "DeleteFunctionConcurrency",
+                  "text": "DeleteFunctionConcurrency",
+                  "path": "example_lambda_DeleteFunctionConcurrency_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702837"
+                },
+                {
+                  "name": "DeleteProvisionedConcurrencyConfig",
+                  "text": "DeleteProvisionedConcurrencyConfig",
+                  "path": "example_lambda_DeleteProvisionedConcurrencyConfig_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702857"
+                },
+                {
+                  "name": "GetAccountSettings",
+                  "text": "GetAccountSettings",
+                  "path": "example_lambda_GetAccountSettings_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702878"
+                },
+                {
+                  "name": "GetAlias",
+                  "text": "GetAlias",
+                  "path": "example_lambda_GetAlias_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702898"
+                },
+                {
+                  "name": "GetFunction",
+                  "text": "GetFunction",
+                  "path": "example_lambda_GetFunction_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702918"
+                },
+                {
+                  "name": "GetFunctionConcurrency",
+                  "text": "GetFunctionConcurrency",
+                  "path": "example_lambda_GetFunctionConcurrency_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702939"
+                },
+                {
+                  "name": "GetFunctionConfiguration",
+                  "text": "GetFunctionConfiguration",
+                  "path": "example_lambda_GetFunctionConfiguration_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702959"
+                },
+                {
+                  "name": "GetPolicy",
+                  "text": "GetPolicy",
+                  "path": "example_lambda_GetPolicy_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.702980"
+                },
+                {
+                  "name": "GetProvisionedConcurrencyConfig",
+                  "text": "GetProvisionedConcurrencyConfig",
+                  "path": "example_lambda_GetProvisionedConcurrencyConfig_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703048"
+                },
+                {
+                  "name": "Invoke",
+                  "text": "Invoke",
+                  "path": "example_lambda_Invoke_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703080"
+                },
+                {
+                  "name": "ListFunctions",
+                  "text": "ListFunctions",
+                  "path": "example_lambda_ListFunctions_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703101"
+                },
+                {
+                  "name": "ListProvisionedConcurrencyConfigs",
+                  "text": "ListProvisionedConcurrencyConfigs",
+                  "path": "example_lambda_ListProvisionedConcurrencyConfigs_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703150"
+                },
+                {
+                  "name": "ListTags",
+                  "text": "ListTags",
+                  "path": "example_lambda_ListTags_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703177"
+                },
+                {
+                  "name": "ListVersionsByFunction",
+                  "text": "ListVersionsByFunction",
+                  "path": "example_lambda_ListVersionsByFunction_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703201"
+                },
+                {
+                  "name": "PublishVersion",
+                  "text": "PublishVersion",
+                  "path": "example_lambda_PublishVersion_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703225"
+                },
+                {
+                  "name": "PutFunctionConcurrency",
+                  "text": "PutFunctionConcurrency",
+                  "path": "example_lambda_PutFunctionConcurrency_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703296"
+                },
+                {
+                  "name": "PutProvisionedConcurrencyConfig",
+                  "text": "PutProvisionedConcurrencyConfig",
+                  "path": "example_lambda_PutProvisionedConcurrencyConfig_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703337"
+                },
+                {
+                  "name": "RemovePermission",
+                  "text": "RemovePermission",
+                  "path": "example_lambda_RemovePermission_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703390"
+                },
+                {
+                  "name": "TagResource",
+                  "text": "TagResource",
+                  "path": "example_lambda_TagResource_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703413"
+                },
+                {
+                  "name": "UntagResource",
+                  "text": "UntagResource",
+                  "path": "example_lambda_UntagResource_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703434"
+                },
+                {
+                  "name": "UpdateAlias",
+                  "text": "UpdateAlias",
+                  "path": "example_lambda_UpdateAlias_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703455"
+                },
+                {
+                  "name": "UpdateFunctionCode",
+                  "text": "UpdateFunctionCode",
+                  "path": "example_lambda_UpdateFunctionCode_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703477"
+                },
+                {
+                  "name": "UpdateFunctionConfiguration",
+                  "text": "UpdateFunctionConfiguration",
+                  "path": "example_lambda_UpdateFunctionConfiguration_section.html",
+                  "children": [],
+                  "last_updated": "2025-08-30 12:16:04.703498"
+                }
+              ],
+              "last_updated": "2025-08-30 12:16:04.703499"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.703499"
+        },
+        {
+          "name": "Scenarios",
+          "text": "Scenarios",
+          "path": "service_code_examples_scenarios.html",
+          "children": [
+            {
+              "name": "Automatically confirm known users with a Lambda function",
+              "text": "Automatically confirm known users with a Lambda function",
+              "path": "example_cross_CognitoAutoConfirmUser_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703576"
+            },
+            {
+              "name": "Automatically migrate known users with a Lambda function",
+              "text": "Automatically migrate known users with a Lambda function",
+              "path": "example_cross_CognitoAutoMigrateUser_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703597"
+            },
+            {
+              "name": "Create a REST API to track COVID-19 data",
+              "text": "Create a REST API to track COVID-19 data",
+              "path": "example_cross_ApiGatewayDataTracker_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703617"
+            },
+            {
+              "name": "Create a lending library REST API",
+              "text": "Create a lending library REST API",
+              "path": "example_cross_AuroraRestLendingLibrary_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703637"
+            },
+            {
+              "name": "Create a messenger application",
+              "text": "Create a messenger application",
+              "path": "example_cross_StepFunctionsMessenger_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703658"
+            },
+            {
+              "name": "Create a serverless application to manage photos",
+              "text": "Create a serverless application to manage photos",
+              "path": "example_cross_PAM_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703683"
+            },
+            {
+              "name": "Create a websocket chat application",
+              "text": "Create a websocket chat application",
+              "path": "example_cross_ApiGatewayWebsocketChat_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703704"
+            },
+            {
+              "name": "Create an application to analyze customer feedback",
+              "text": "Create an application to analyze customer feedback",
+              "path": "example_cross_FSA_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703725"
+            },
+            {
+              "name": "Invoke a Lambda function from a browser",
+              "text": "Invoke a Lambda function from a browser",
+              "path": "example_cross_LambdaForBrowser_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703745"
+            },
+            {
+              "name": "Transform data with S3 Object Lambda",
+              "text": "Transform data with S3 Object Lambda",
+              "path": "example_cross_ServerlessS3DataTransformation_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703766"
+            },
+            {
+              "name": "Use API Gateway to invoke a Lambda function",
+              "text": "Use API Gateway to invoke a Lambda function",
+              "path": "example_cross_LambdaAPIGateway_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703787"
+            },
+            {
+              "name": "Use Step Functions to invoke Lambda functions",
+              "text": "Use Step Functions to invoke Lambda functions",
+              "path": "example_cross_ServerlessWorkflows_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703808"
+            },
+            {
+              "name": "Use scheduled events to invoke a Lambda function",
+              "text": "Use scheduled events to invoke a Lambda function",
+              "path": "example_cross_LambdaScheduledEvents_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703829"
+            },
+            {
+              "name": "Use the Neptune API to query graph data",
+              "text": "Use the Neptune API to query graph data",
+              "path": "example_cross_Neptune_Query_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703850"
+            },
+            {
+              "name": "Write custom activity data with a Lambda function after Amazon Cognito user authentication",
+              "text": "Write custom activity data with a Lambda function after Amazon Cognito user authentication",
+              "path": "example_cross_CognitoCustomActivityLog_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703871"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.703871"
+        },
+        {
+          "name": "Serverless examples",
+          "text": "Serverless examples",
+          "path": "service_code_examples_serverless_examples.html",
+          "children": [
+            {
+              "name": "Connecting to an Amazon RDS database in a Lambda function",
+              "text": "Connecting to an Amazon RDS database in a Lambda function",
+              "path": "example_serverless_connect_RDS_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703960"
+            },
+            {
+              "name": "Invoke a Lambda function from a Kinesis trigger",
+              "text": "Invoke a Lambda function from a Kinesis trigger",
+              "path": "example_serverless_Kinesis_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.703994"
+            },
+            {
+              "name": "Invoke a Lambda function from a DynamoDB trigger",
+              "text": "Invoke a Lambda function from a DynamoDB trigger",
+              "path": "example_serverless_DynamoDB_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704021"
+            },
+            {
+              "name": "Invoke a Lambda function from a Amazon DocumentDB trigger",
+              "text": "Invoke a Lambda function from a Amazon DocumentDB trigger",
+              "path": "example_serverless_DocumentDB_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704045"
+            },
+            {
+              "name": "Invoke a Lambda function from an Amazon MSK trigger",
+              "text": "Invoke a Lambda function from an Amazon MSK trigger",
+              "path": "example_serverless_MSK_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704078"
+            },
+            {
+              "name": "Invoke a Lambda function from an Amazon S3 trigger",
+              "text": "Invoke a Lambda function from an Amazon S3 trigger",
+              "path": "example_serverless_S3_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704102"
+            },
+            {
+              "name": "Invoke a Lambda function from an Amazon SNS trigger",
+              "text": "Invoke a Lambda function from an Amazon SNS trigger",
+              "path": "example_serverless_SNS_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704122"
+            },
+            {
+              "name": "Invoke a Lambda function from an Amazon SQS trigger",
+              "text": "Invoke a Lambda function from an Amazon SQS trigger",
+              "path": "example_serverless_SQS_Lambda_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704142"
+            },
+            {
+              "name": "Reporting batch item failures for Lambda functions with a Kinesis trigger",
+              "text": "Reporting batch item failures for Lambda functions with a Kinesis trigger",
+              "path": "example_serverless_Kinesis_Lambda_batch_item_failures_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704163"
+            },
+            {
+              "name": "Reporting batch item failures for Lambda functions with a DynamoDB trigger",
+              "text": "Reporting batch item failures for Lambda functions with a DynamoDB trigger",
+              "path": "example_serverless_DynamoDB_Lambda_batch_item_failures_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704183"
+            },
+            {
+              "name": "Reporting batch item failures for Lambda functions with an Amazon SQS trigger",
+              "text": "Reporting batch item failures for Lambda functions with an Amazon SQS trigger",
+              "path": "example_serverless_SQS_Lambda_batch_item_failures_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704203"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.704204"
+        },
+        {
+          "name": "AWS community contributions",
+          "text": "AWS community contributions",
+          "path": "service_code_examples_aws_community_contributions.html",
+          "children": [
+            {
+              "name": "Build and test a serverless application",
+              "text": "Build and test a serverless application",
+              "path": "example_tributary-lite_serverless-application_section.html",
+              "children": [],
+              "last_updated": "2025-08-30 12:16:04.704251"
+            }
+          ],
+          "last_updated": "2025-08-30 12:16:04.704252"
+        }
+      ],
+      "last_updated": "2025-08-30 12:16:04.704253"
+    },
+    {
+      "name": "Lambda quotas",
+      "text": "Lambda quotas",
+      "path": "gettingstarted-limits.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.704309"
+    },
+    {
+      "name": "Document history",
+      "text": "Document history",
+      "path": "lambda-releases.html",
+      "children": [],
+      "last_updated": "2025-08-30 12:16:04.704330"
+    }
+  ],
+  "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+  "last_updated": "2025-08-30 12:16:04.704332"
+}
